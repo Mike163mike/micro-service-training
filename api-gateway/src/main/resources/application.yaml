@@ -1,6 +1,12 @@
 spring:
   application:
-    name: eureca-server
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
 #server:
 #  port: 8081
 #eureka:
@@ -20,11 +26,11 @@ spring:
 #  pattern:
 #    console: "%C{1.} [%-5level] %d{HH:mm:ss} - %msg%n"
 server:
-  port: 8761
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+  port: 8082
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
 #  server:
 #    enable-self-preservation: false
 logging:
