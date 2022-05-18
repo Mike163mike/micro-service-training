@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: test-client
+#server:
+#  port: 0
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8081/eurica-server
+#  server:
+#    enable-self-preservation: false
+#  pattern:
+#    console: "%C{1.} [%-5level] %d{HH:mm:ss} - %msg%n"
+eureka:
+  instance:
+    instance-id: eureca-client-instance-1
