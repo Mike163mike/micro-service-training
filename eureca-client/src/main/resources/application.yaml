@@ -3,6 +3,7 @@ spring:
     name: test-client
 server:
   port: 0
+#  0 - для автоматического присваивания номера порта, для ручного, по конвенции от 8080 и далее.
 #eureka:
 #  client:
 #    service-url:

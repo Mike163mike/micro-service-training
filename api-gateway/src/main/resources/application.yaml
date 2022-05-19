@@ -17,8 +17,6 @@ spring:
         uri: "lb://test-client-2"
         predicates[0]: Path=/second/secondTest
         predicate[1]: Method=GET
-#server:
-#  port: 8081
 #eureka:
 #  client:
 #    register-with-eureka: false
@@ -36,13 +34,7 @@ spring:
 #  pattern:
 #    console: "%C{1.} [%-5level] %d{HH:mm:ss} - %msg%n"
 server:
-  port: 8082
-#eureka:
-#  client:
-#    register-with-eureka: false
-#    fetch-registry: false
-#  server:
-#    enable-self-preservation: false
+  port: 8765
 logging:
   level:
     com:
