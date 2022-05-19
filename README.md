@@ -1,4 +1,4 @@
 # micro-service-training
-Training project with moduls microservices 
-Gateway
-Load balancer
+Training project with moduls microservices, 
+Gateway,
+Load balancer.
