@@ -7,6 +7,16 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      routes[0]:
+        id: test
+        uri: "lb://test-client"
+        predicates[0]: Path=/main/test
+        predicate[1]: Method=GET
+      routes[1]:
+        id: secondTest
+        uri: "lb://test-client-2"
+        predicates[0]: Path=/second/secondTest
+        predicate[1]: Method=GET
 #server:
 #  port: 8081
 #eureka:
